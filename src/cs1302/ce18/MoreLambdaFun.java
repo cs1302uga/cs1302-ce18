@@ -10,6 +10,15 @@ import java.util.function.IntFunction;
 public class MoreLambdaFun {
 
     /**
+     * Main entry-point into the application.
+     * @param args the command-line arguments.
+     */
+    public static void main(String[] args) {
+
+
+    } // main    
+    
+    /**
      * Prints the elements of the array that pass the test specified by the given predicate
      * using a string mapper. More formally, this method prints the string mapped elements 
      * {@code f.apply(e)} in the array referred to by {@code t} for each {@code e} such that 
