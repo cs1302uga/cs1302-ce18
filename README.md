@@ -8,9 +8,10 @@
 > ```
 > **-- Age Old Saying**
 
-This class exercise explores functional interfaces and lambda expressions in
-conjunction with generic methods and interfaces. In this exercise, only the generic
-method signatures will be provided. Implementation details are left to the student.
+This class exercise explores functional interfaces, lambda expressions, and method
+references in conjunction with generic methods and interfaces. In this exercise, 
+only the generic method signatures will be provided. Implementation details are left 
+to the student.
 
 ## References and Prerequisites
 
