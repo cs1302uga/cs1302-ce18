@@ -1,5 +1,7 @@
 package cs1302.ce18;
 
+import java.util.function.Predicate;
+import java.util.function.Function;
 import java.util.function.IntFunction;
 
 /**
@@ -8,18 +10,20 @@ import java.util.function.IntFunction;
 public class MoreLambdaFun {
 
     /**
-     * Prints the elements of the array that pass the test specified by the given predicate.
-     * More formally, this method prints all elements {@code e} in the array referred to by
-     * {@code t} such that {@code p.test(e)}. Each element will be printed on its own line.
+     * Prints the elements of the array that pass the test specified by the given predicate
+     * using a string mapper. More formally, this method prints the string mapped elements 
+     * {@code f.apply(e)} in the array referred to by {@code t} for each {@code e} such that 
+     * {@code p.test(e)}. Each string mapped element will be printed on its own line.
      *
      * @param <T> the type of the array elements
      * @param t the specified array
      * @param p the specified predicate
-     * @throws NullPointerException if the specified predicate is {@code null}
+     * @param p the specified string mapper
+     * @throws NullPointerException if the specified predicate or string mapper is {@code null}
      */
-    private static <T> void printlnMatches(T[] t, Predicate<T> p) {
+    private static <T> void printlnMappedMatches(T[] t, Predicate<T> p, Function<T, String> f) {
         throw new UnsupportedOperationException("not yet implemented");
-    } // printlnMatches    
+    } // printlnMappedMatches    
     
     /**
      * Returns a copy of the specified array, truncating or padding with nulls (if necessary) so 
