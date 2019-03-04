@@ -16,13 +16,14 @@ public class MoreLambdaFun {
     public static void main(String[] args) {
 
         Quiz[] quizzes = new Quiz[] {
-            new Quiz(1, 20, false, 100),
-            new Quiz(2, 20, false, 100),
-            new Quiz(3, 10, true, 10),
-            new Quiz(4, 10, false, 20),
-            new Quiz(5, 100, true, 100), //100 pt. bonus quiz?!?
+            new Quiz(1,  20, false, 100),
+            new Quiz(2,  20, false, 100),
+            new Quiz(3,  10,  true,  10),
+            new Quiz(4,  10, false,  20),
+            new Quiz(5, 100,  true, 100), // 100 pt. bonus quiz?!?
         };
 
+	
 
     } // main    
     
