@@ -37,7 +37,7 @@ public class MoreLambdaFun {
      * @param <T> the type of the array elements
      * @param t the specified array
      * @param p the specified predicate
-     * @param p the specified string mapper
+     * @param f the specified string mapper
      * @throws NullPointerException if the specified predicate or string mapper 
      *                              is {@code null}
      */
