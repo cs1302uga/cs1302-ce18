@@ -52,7 +52,11 @@ command depends on your present working directory), then please note that contex
    private static <T> void printlnMappedMatches(T[] t, Predicate<T> p, Function<T, String> f)
    ```
    Implement the `printlnMappedMatches` method in `MoreLambdaFun.java`. You do not need to use a lambda for this step.
-   You will only need to use the `Function<T, R>` and `Predicate<T>` references to call the appropriate methods.
+   You will only need to use the 
+   [`Function<T, R>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) 
+   and 
+   [`Predicate<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html)
+   references to call the appropriate methods.
    
 1. At the end of the `main` method of `MoreLambdaFun` class:
 
@@ -92,8 +96,10 @@ command depends on your present working directory), then please note that contex
    1. Specifically, what reference types can replace `R`?
    
    1. In order to call this method, we need a reference to an object of a class that implements 
-     `IntFunction<R[]>`. The interface is defined as `IntFunction<T>`. Here, we replace `T` with
-	 `R[]`. Keep this in mind when inspecting the API documentation for `IntFunction<T>`.
+     `IntFunction<R[]>`. The interface is defined as 
+     [`IntFunction<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html). 
+     Here, we replace `T` with `R[]`. Keep this in mind when inspecting the API documentation 
+     for `IntFunction<T>`.
 	 
    1. Write the full, expanded method signature (with the replaced types) of the single, abstract method
       of `IntFunction<R[]>` in your notes. Pay careful attention to the return type and the type of the 
