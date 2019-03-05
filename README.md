@@ -115,7 +115,7 @@ command depends on your present working directory), then please note that contex
 	  
 1. Create a `static` method called `makeQuizArray` that, if written correctly, a method 
    reference for that method can be used to supply the `g` parameter in a call to your
-   copyOf` method. Then, at the end of the `main` method of `MoreLambdaFun` class:
+   `copyOf` method. Then, at the end of the `main` method of `MoreLambdaFun` class:
    
    1. Declare a variable `twentyQuizzes` of type `Quiz[]` and, using your `copyOf`, assign to it 
       a copy of the array referred to by `quizzes` containing twenty spots for quizzes (with 
