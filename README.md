@@ -16,6 +16,8 @@ to the student.
 ## References and Prerequisites
 
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
+* [Oracle: Lambda Expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
+* [Oracle: Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
 
 ## Questions
 
