@@ -89,7 +89,7 @@ command depends on your present working directory), then please note that contex
    
    1. What is the generic type parameter?
    
-   1. Specifically, what reference types can replace `T`?
+   1. Specifically, what reference types can replace `R`?
    
    1. In order to call this method, we need a reference to an object of a class that implements 
      `IntFunction<R[]>`. The interface is defined as `IntFunction<T>`. Here, we replace `T` with
@@ -97,7 +97,7 @@ command depends on your present working directory), then please note that contex
 	 
    1. Write the full, expanded method signature (with the replaced types) of the single, abstract method
       of `IntFunction<R[]>` in your notes. Pay careful attention to the return type and the type of the 
-	  formal parameter.
+      formal parameter.
 
 1. After carefully reading its Javadoc comment, implement the `copyOf` method in `MoreLambdaFun.java`. 
    You do not need to use a lambda for this step.
@@ -106,24 +106,30 @@ command depends on your present working directory), then please note that contex
 
 1. At the end of the `main` method of the `MoreLambdaFun` class:
 
-   1. Declare a variable `lessQuizzes` of type `Quiz[]` and, using your `copyOf`, assign to it 
+   1. Declare a variable `lessQuizzes` of type `Quiz[]` and, using your `copyOf` method, assign to it 
       a copy of the array referred to by `quizzes` containing half as many quizzes (containing
-	  the first half of the quizzes). You should supply the `g` parameter 
-	  **using an array constructor method reference**. 
+      the first half of the quizzes). You should supply the `g` parameter 
+      **using an array constructor method reference**. 
+      
+   1. Using a for-each loop, print the quiz numbers of all `Quiz` references in `lessQuizzes`.
 
-   1. Declare a variable `moreQuizzes` of type `Quiz[]` and, using your `copyOf`, assign to it 
+   1. Declare a variable `moreQuizzes` of type `Quiz[]` and, using your `copyOf` method, assign to it 
       a copy of the array referred to by `quizzes` containing four (4) more spots for quizzes
-	  (all `null`). You should supply the `g` parameter **using a regular lambda expression**. 
+      (all `null`). You should supply the `g` parameter **using a regular lambda expression**. 
+      
+   1. Using an appropriate loop, print the quiz numbers of all non-null `Quiz` references in `moreQuizzes`. 
+      Also, print the length of the array to make sure it is the proper size.
 	  
-1. Create a `static` method called `makeQuizArray` that, if written correctly, a method 
+1. Create and document a `static` method called `makeQuizArray` that, if written correctly, a method 
    reference for that method can be used to supply the `g` parameter in a call to your
    `copyOf` method. Then, at the end of the `main` method of the `MoreLambdaFun` class:
    
    1. Declare a variable `twentyQuizzes` of type `Quiz[]` and, using your `copyOf`, assign to it 
       a copy of the array referred to by `quizzes` containing twenty spots for quizzes (with 
-      trailing `null` values as described in the Javadoc for `copyOf`). You should supply the 
-	  `g` parameter **using a method reference** to the method you created in the previous
-	  step. 
+      trailing `null` values as described in the Javadoc for `copyOf`). You should supply the `g` 
+      parameter **using a method reference** to the method you created in the previous step. 
+   1. Using an appropriate loop, print the quiz numbers of all non-null `Quiz` references in 
+      `twentyQuizzes`. Also, print the length of the array to make sure it is the proper size.
 	  
 1. Stage and commit all changes.
 
