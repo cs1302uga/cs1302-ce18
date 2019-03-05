@@ -87,22 +87,22 @@ command depends on your present working directory), then please note that contex
 1. Take a close look at the `copyOf` method and its associated Javadoc in `MoreLambdaFun.java`. 
    The exact signature for this method is:
    ```java
-   public static <R> R[] copyOf(R[] a, int l, IntFunction<R[]> g)
+   public static <T> T[] copyOf(T[] a, int l, IntFunction<T[]> g)
    ```
    Answer the following questions about this method in your notes:
    
    1. What is the generic type parameter?
    
-   1. Specifically, what reference types can replace `R`?
+   1. Specifically, what reference types can replace `T`?
    
    1. In order to call this method, we need a reference to an object of a class that implements 
-     `IntFunction<R[]>`. The interface is defined as 
-     [`IntFunction<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html). 
-     Here, we replace `T` with `R[]`. Keep this in mind when inspecting the API documentation 
-     for `IntFunction<T>`.
+     `IntFunction<T[]>`. The interface is defined as 
+     [`IntFunction<R>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html). 
+     Here, we replace `R` with `T[]`. Keep this in mind when inspecting the API documentation 
+     for `IntFunction<R>`.
 	 
    1. Write the full, expanded method signature (with the replaced types) of the single, abstract method
-      of `IntFunction<R[]>` in your notes. Pay careful attention to the return type and the type of the 
+      of `IntFunction<T[]>` in your notes. Pay careful attention to the return type and the type of the 
       formal parameter.
 
 1. After carefully reading its Javadoc comment, implement the `copyOf` method in `MoreLambdaFun.java`. 
