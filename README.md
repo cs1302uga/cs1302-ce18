@@ -43,50 +43,73 @@ command depends on your present working directory), then please note that contex
    ```
 
 ### Exercise Steps
-
    
 1. Take a close look at the `printlnMappedMatches` method and its associated Javadoc in `MoreLambdaFun.java`. 
    The exact signature for this method is:
    ```java
    private static <T> void printlnMappedMatches(T[] t, Predicate<T> p, Function<T, String> f)
    ```
-   Answer the following questions about this method in your notes:
-   * What is the generic type parameter?
-   * Specifically, what reference types can replace `T`?
-   * In order to call this method, we need a reference to an object of a class that implements `Function<T, String>`
-     and a reference to an object of a class that implements `Predicate<T>`. Similar to `Predicate<T>`,
-     `Function<T, R>` is a functional interface. Write the full method signature of the single, abstract method
-     of `Function<T, R>` in your notes. Pay careful attention to the return type and the type of the formal parameter.
-     **Note**: The method *can* (but doesn't have to) return a datatype that is different from the datatype of the 
-     parameter.
-     
-1. Implement the `printlnMappedMatches` method in `LambdaFun.java`. You do not need to use a lambda for this step.
+   Implement the `printlnMappedMatches` method in `MoreLambdaFun.java`. You do not need to use a lambda for this step.
    You will only need to use the `Function<T, R>` and `Predicate<T>` references to call the appropriate methods.
    
-1. At the end of the `main` method of `LambdaFun` class:
-   * Declare a variable of type `Predicate<Email>` and assign to it, using a lambda expression, a referene to
-     an object that tests if the sender of the email does not have a `"gatech.edu"` email address 
-     (we'll "pretend" that they go to the spam filter). Remember, you can always refer to the API documentation
+1. At the end of the `main` method of `MoreLambdaFun` class:
+
+   * Declare a variable `bonusPred` of type `Predicate<Quiz>` and assign to it, using a lambda expression, a reference to
+     an object that tests if the quiz is a bonus quiz. Remember, you can always refer to the API documentation
      for the associated interface when trying to determine the layout of your lambda.
-   * Declare a variable of type `Function<Email, String>` and assign to it, using a lambda expression, a reference
-     to an object that takes an `Email` object as a parameter and return the contents of the email as some
-     nicely formatted `String`. Remember, you can always refer to the API documentation
-     for the associated interface when trying to determine the layout of your lambda.
+
+   * Declare a variable `numberFunc` of type `Function<Quiz, String>` and assign to it, using a lambda expression, 
+     a reference to an object that takes a `Quiz` object as a parameter and returns a `String` containing
+	 the quiz number and at least one other piece of information about the quiz (other than bonus).
+	 Remember, you can always refer to the API documentation for the associated interface when trying 
+	 to determine the layout of your lambda.
    
-1. Call the `printlnMappedMatches` using your newly created variables to filter out emails in the array referred
-   to by `inbox` from our rival school. Make sure to provide sufficient output so that it will be easy to 
+1. Call the `printlnMappedMatches` using your newly created variables.
+   Make sure to provide sufficient output so that it will be easy to 
    convince your TA or instructor that everything is working properly.
    
 1. Stage and commit all changes.
    
-1. Create two additional `Function<Email, String>` objects to further test your `printlnMappedMatches` method on the same
-   array with the same predicate. In other words, you can provide different ways to print out the emails. 
-   Make sure to provide sufficient output so that it will be easy to convince your TA or instructor that 
-   everything is working properly.
+1. Using lambdas, write the code to print quiz numbers for all quizes that have a time limit that is under
+   twenty minutes. Make sure to provide sufficient output so that it will be easy to 
+   convince your TA or instructor that everything is working properly.
    
 1. Stage and commit all changes.
 
 **CHECKPOINT**
+
+1. Take a close look at the `copyOf` method and its associated Javadoc in `MoreLambdaFun.java`. 
+   The exact signature for this method is:
+   ```java
+   public static <R> R[] copyOf(R[] a, int l, IntFunction<R[]> g)
+   ```
+   Answer the following questions about this method in your notes:
+   
+   1. What is the generic type parameter?
+   
+   1. Specifically, what reference types can replace `T`?
+   
+   1. In order to call this method, we need a reference to an object of a class that implements 
+     `IntFunction<R[]>`. The interface is defined as `IntFunction<T>`. Here, we replace `T` with
+	 `R[]`. Keep this in mind when inspecting the API documentation for `IntFunction<T>`.
+	 
+   1. Write the full, expanded method signature (with the replaced types) of the single, abstract method
+      of `IntFunction<R[]>` in your notes. Pay careful attention to the return type and the type of the 
+	  formal parameter.
+
+1. After carefully reading its Javadoc comment, implement the `copyOf` method in `MoreLambdaFun.java`. 
+   You do not need to use a lambda for this step.
+
+1. At the end of the `main` method of `MoreLambdaFun` class:
+
+   * Declare a variable `lessQuizzes` of type `Quiz[]` and, using your `copyOf`, assign to it 
+     a copy of the array referred to by `quizzes` containg half as many quizzes. You should 
+	 supply the `g` parameters **using an array constructor method reference**. 
+
+   * Declare a variable `moreQuizzes` of type `Quiz[]` and, using your `copyOf`, assign to it 
+     a copy of the array referred to by `quizzes` containg four (4) more spots for quizzes
+	 (all `null`). You should supply the `g` parameters **using a regular lambda expression**. 
+
 
 <hr/>
 
