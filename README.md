@@ -2,7 +2,7 @@
 # cs1302-ce18 Generic Method Implementation
 
 > ```java
-> String notSecret = "VG8gSGVjayB3aXRoIFRlY2gh";
+> String notSecret = "SGFwcHkgQmlydGhkYXksIERyLiBCYXJuZXMh";
 > String decoded = new String(java.util.Base64.getDecoder().decode(notSecret));
 > System.out.println(decoded);
 > ```
