@@ -22,9 +22,12 @@ to the student.
 
 ## References and Prerequisites
 
-* [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
-* [Oracle: Lambda Expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
-* [Oracle: Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+* [The Java™ Tutorials:  Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
+* [The Java™ Tutorials:  Lambda Expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
+* [The Java™ Tutorials:  Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+* [`java.util.function.Predicate` Interface Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html)
+* [`java.util.function.Function` Interface Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html)
+* [`java.util.function.IntFunction` Interface Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html)
 
 ## Questions
 
@@ -124,7 +127,8 @@ command depends on your present working directory), then please note that contex
       the first half of the quizzes). You should supply the `g` parameter 
       **using a regular lambda expression**.
       
-      [Hint: See Reference to a Constructor Section](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html#constructor)
+      **Hint:** See the [Reference to a Constructor](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html#constructor)
+      section.
       
    1. Using a for-each loop, print the quiz numbers of all `Quiz` references in `lessQuizzes`.
 
