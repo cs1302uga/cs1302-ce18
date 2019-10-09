@@ -8,13 +8,13 @@ package cs1302.ce18;
  * @version 1.1; Mar 4 2019
  */
 public class Quiz {
-    /** A number used to identify this quiz object */
+    /** A number used to identify this quiz object. */
     private int number;
-    /** Time (in minutes) students have to complete the quiz */
+    /** Time (in minutes) students have to complete the quiz. */
     private int timeLimit;
-    /** Total point value for this quiz */
+    /** Total point value for this quiz. */
     private int points;
-    /** Indicates if this is a bonus quiz */
+    /** Indicates if this is a bonus quiz. */
     private boolean bonus;
 
     /**
@@ -26,8 +26,8 @@ public class Quiz {
      * @param bonus indicates if this is a bonus quiz.
      * @param limit the time (in minutes) students have to complete
      * this quiz.
-     * 
-     * @throws IllegalArgumentException if {@code number}, {@code points} 
+     *
+     * @throws IllegalArgumentException if {@code number}, {@code points}
      * or {@code limit} is negative.
      */
     public Quiz(int number, int points, boolean bonus, int limit) {
@@ -40,12 +40,12 @@ public class Quiz {
         this.points = points;
         this.timeLimit = limit;
     } // Quiz
-    
+
     /**
      * Modifies the point total associated with this quiz.
      *
      * @param pointValue the new point value.
-     * @throws IllegalArgumentException if {@code pointValue} 
+     * @throws IllegalArgumentException if {@code pointValue}
      * is negative.
      */
     public void setPoints(int pointValue) {
@@ -70,7 +70,7 @@ public class Quiz {
      */
     public void setNumber(int number) {
         checkNegative("Quiz(setNumber): The quiz identifier cannot be negative", number);
-        
+
         this.number = number;
     } // setNumber
 
@@ -82,10 +82,10 @@ public class Quiz {
     public int getNumber() {
         return this.number;
     } // setNumber
-    
+
     /**
      * Updates the time limit for this quiz.
-     * 
+     *
      * @param limit the new time limit.
      * @throws IllegalArgumentException if {@code limit} is negative.
      */
@@ -93,17 +93,17 @@ public class Quiz {
         checkNegative("Quiz(setPoints): time limit cannot be negative", limit);
 
         this.timeLimit = limit;
-    } // setDueDate
+    } // setTimeLimit
 
     /**
      * Returns the time limit for this quiz.
      *
      * @return the time limit for this {@code Quiz}.
      */
-    public int getDueDate() {
+    public int getTimeLimit() {
         return this.timeLimit;
-    } // getDueDate
-    
+    } // getTimeLimit
+
     /**
      * Returns whether or not this quiz is bonus.
      *
@@ -113,7 +113,7 @@ public class Quiz {
     public boolean isBonus() {
         return bonus;
     } // isBonus
-    
+
     /**
      * Returns the number of points associated with this quiz.
      *
@@ -142,7 +142,7 @@ public class Quiz {
      * @throws IllegalArgumentException if {@code value} is negative.
      */
     private static void checkNegative(String message, int value) throws IllegalArgumentException {
-        if(value < 0) {
+        if (value < 0) {
             throw new IllegalArgumentException(message);
         } // if
     } // checkNegative

@@ -23,35 +23,34 @@ public class MoreLambdaFun {
             new Quiz(5, 100,  true, 100), // 100 pt. bonus quiz?!?
         };
 
-	
 
-    } // main    
-    
+    } // main
+
     /**
      * Prints the elements of the array that pass the test specified by the
      * given predicate using a string mapper. More formally, this method prints
      * the string mapped elements {@code f.apply(e)} in the array referred to by
-     * {@code t} for each {@code e} such that {@code p.test(e)}. Each string 
+     * {@code t} for each {@code e} such that {@code p.test(e)}. Each string
      * mapped element will be printed on its own line.
      *
      * @param <T> the type of the array elements
      * @param t the specified array
      * @param p the specified predicate
      * @param f the specified string mapper
-     * @throws NullPointerException if the specified predicate or string mapper 
+     * @throws NullPointerException if the specified predicate or string mapper
      *                              is {@code null}
      */
     private static <T> void printlnMappedMatches(T[] t, Predicate<T> p, Function<T, String> f) {
         throw new UnsupportedOperationException("not yet implemented");
-    } // printlnMappedMatches    
-    
+    } // printlnMappedMatches
+
     /**
      * Returns a copy of the specified array, truncating or padding with nulls
-     * (if necessary) so that the copy has the specified length. For all 
-     * indices that are valid in both the original array and the copy, the two 
+     * (if necessary) so that the copy has the specified length. For all
+     * indices that are valid in both the original array and the copy, the two
      * arrays will contain identical values. For any indices that are valid in
-     * the copy but not the original, the copy will contain {@code null}. Such 
-     * indices will exist if, and only if, {@code l} is greater than 
+     * the copy but not the original, the copy will contain {@code null}. Such
+     * indices will exist if, and only if, {@code l} is greater than
      * {@code a.length}. The resulting array is created using {@code g}.
      *
      * @param <T> the type of the array elements.
@@ -63,8 +62,7 @@ public class MoreLambdaFun {
      * @throws NullPointerException if {@code a} or {@code g} is {@code null}
      */
     public static <T> T[] copyOf(T[] a, int l, IntFunction<T[]> g) {
-	throw new UnsupportedOperationException("not yet implemented");
+        throw new UnsupportedOperationException("not yet implemented");
     } // copyOf
 
 } // MoreLambdaFun
-
