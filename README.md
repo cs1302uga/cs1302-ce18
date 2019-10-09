@@ -130,8 +130,8 @@ command depends on your present working directory), then please note that contex
       the first half of the quizzes). You should supply the `g` parameter 
       **using a regular lambda expression**.
       
-      **Hint:** See the [Reference to a Constructor](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html#constructor)
-      section.
+      **Hint:** See the [`toArray` documentation](https://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#toArray-java.util.function.IntFunction-),
+      which also takes an `IntFunction` parameter.
       
    1. Using a for-each loop, print the quiz numbers of all `Quiz` references in `lessQuizzes`.
 
