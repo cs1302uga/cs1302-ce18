@@ -20,11 +20,14 @@ to the student.
 * **LO4.a:** (Partial) Design, create and use interfaces in a software solution.
 * **LO4.b:** (Partial) Utilize interface-based polymorphism in a software solution.
 
-## References and Prerequisites
+## Prerequisites
 
 * [The Java™ Tutorials:  Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
 * [The Java™ Tutorials:  Lambda Expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
 * [The Java™ Tutorials:  Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+
+## References
+
 * [`java.util.function.Predicate` Interface Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html)
 * [`java.util.function.Function` Interface Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html)
 * [`java.util.function.IntFunction` Interface Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html)
