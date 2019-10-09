@@ -13,6 +13,13 @@ references in conjunction with generic methods and interfaces. In this exercise,
 only the generic method signatures will be provided. Implementation details are left 
 to the student.
 
+## Course-Specific Learning Outcomes
+
+* **LO2.d:** (Partial) Implement new generic methods, interfaces, and classes in a software solution.
+* **LO2.e:** (Partial) Utilize existing generic methods, interfaces, and classes in a software solution.
+* **LO4.a:** (Partial) Design, create and use interfaces in a software solution.
+* **LO4.b:** (Partial) Utilize interface-based polymorphism in a software solution.
+
 ## References and Prerequisites
 
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
@@ -66,21 +73,21 @@ command depends on your present working directory), then please note that contex
 
    1. Declare a variable `numberFunc` of type `Function<Quiz, String>` and assign to it, using a lambda expression, 
       a reference to an object that takes a `Quiz` object as a parameter and returns a `String` containing
-	  the quiz number and at least one other piece of information about the quiz (other than bonus).
-	  Remember, you can always refer to the API documentation for the associated interface when trying 
-	  to determine the layout of your lambda.
+      the quiz number and at least one other piece of information about the quiz (other than bonus).
+      Remember, you can always refer to the API documentation for the associated interface when trying 
+      to determine the layout of your lambda.
    
 1. Call the `printlnMappedMatches` using your newly created variables.
    Make sure to provide sufficient output so that it will be easy to 
    convince your TA or instructor that everything is working properly.
    
-1. Stage and commit all changes.
+1. Compile your code and run it. Then, stage and commit all changes.
    
 1. Using lambdas, write the code to print quiz numbers for all quizes that have a time limit that is under
    twenty minutes. Make sure to provide sufficient output so that it will be easy to 
    convince your TA or instructor that everything is working properly.
    
-1. Stage and commit all changes.
+1. Make sure your code passes the `checkstyle` audit then stage and commit all changes.
 
 **CHECKPOINT**
 
@@ -115,17 +122,23 @@ command depends on your present working directory), then please note that contex
    1. Declare a variable `lessQuizzes` of type `Quiz[]` and, using your `copyOf` method, assign to it 
       a copy of the array referred to by `quizzes` containing half as many quizzes (containing
       the first half of the quizzes). You should supply the `g` parameter 
-      **using an array constructor method reference**. 
+      **using a regular lambda expression**.
+      
+      [Hint: See Reference to a Constructor Section](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html#constructor)
       
    1. Using a for-each loop, print the quiz numbers of all `Quiz` references in `lessQuizzes`.
 
    1. Declare a variable `moreQuizzes` of type `Quiz[]` and, using your `copyOf` method, assign to it 
       a copy of the array referred to by `quizzes` containing four (4) more spots for quizzes
-      (all `null`). You should supply the `g` parameter **using a regular lambda expression**. 
+      (all `null`). You should supply the `g` parameter **using an array constructor method reference**. 
       
    1. Using an appropriate loop, print the quiz numbers of all non-null `Quiz` references in `moreQuizzes`. 
       Also, print the length of the array to make sure it is the proper size.
-	  
+
+1. Make sure your code passes the `checkstyle` audit then stage and commit all changes.
+
+**CHECKPOINT**
+
 1. Create and document a `static` method called `makeQuizArray` that, if written correctly, a method 
    reference for that method can be used to supply the `g` parameter in a call to your
    `copyOf` method. Then, at the end of the `main` method of the `MoreLambdaFun` class:
@@ -137,7 +150,7 @@ command depends on your present working directory), then please note that contex
    1. Using an appropriate loop, print the quiz numbers of all non-null `Quiz` references in 
       `twentyQuizzes`. Also, print the length of the array to make sure it is the proper size.
 	  
-1. Stage and commit all changes.
+1. Make sure your code passes the `checkstyle` audit then stage and commit all changes.
 
 **CHECKPOINT**
 
