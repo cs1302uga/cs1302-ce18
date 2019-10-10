@@ -115,6 +115,9 @@ command depends on your present working directory), then please note that contex
      [`IntFunction<R>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html). 
      Here, we replace `R` with `T[]`. Keep this in mind when inspecting the API documentation 
      for `IntFunction<R>`.
+     
+     **Hint:** See the [`toArray` documentation from the `GenList` project](https://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#toArray-java.util.function.IntFunction-),
+      which also takes an `IntFunction` parameter.
 	 
    1. Write the full, expanded method signature (with the replaced types) of the single, abstract method
       of `IntFunction<T[]>` in your notes. Pay careful attention to the return type and the type of the 
