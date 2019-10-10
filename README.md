@@ -1,6 +1,8 @@
 
 # cs1302-ce18 Generic Method Implementation
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 > ```java
 > String notSecret = "SGFwcHkgQmlydGhkYXksIERyLiBCYXJuZXMh";
 > String decoded = new String(java.util.Base64.getDecoder().decode(notSecret));
