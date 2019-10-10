@@ -96,15 +96,6 @@ public class Quiz {
     } // setTimeLimit
 
     /**
-     * Returns the time limit for this quiz.
-     *
-     * @return the time limit for this {@code Quiz}.
-     */
-    public int getTimeLimit() {
-        return this.timeLimit;
-    } // getTimeLimit
-
-    /**
      * Returns whether or not this quiz is bonus.
      *
      * @return {@code true} if this {@code Quiz} is bonus and false
