@@ -118,7 +118,7 @@ command depends on your present working directory), then please note that contex
      Here, we replace `R` with `T[]`. Keep this in mind when inspecting the API documentation 
      for `IntFunction<R>`.
      
-     **Hint:** See the [`toArray` documentation from the `GenList` project](https://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#toArray-java.util.function.IntFunction-),
+     **Hint:** See the [`toArray` documentation from the `GenList` project](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#toArray-java.util.function.IntFunction-),
       which also takes an `IntFunction` parameter.
 	 
    1. Write the full, expanded method signature (with the replaced types) of the single, abstract method
@@ -137,7 +137,7 @@ command depends on your present working directory), then please note that contex
       the first half of the quizzes). You should supply the `g` parameter 
       **using a regular lambda expression**.
       
-      **Hint:** See the [`toArray` documentation from the `GenList` project](https://cobweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#toArray-java.util.function.IntFunction-),
+      **Hint:** See the [`toArray` documentation from the `GenList` project](http://csweb.cs.uga.edu/~mec/cs1302-genlistadt-doc/cs1302/genlistadt/GenList.html#toArray-java.util.function.IntFunction-),
       which also takes an `IntFunction` parameter.
       
    1. Using a for-each loop, print the quiz numbers of all `Quiz` references in `lessQuizzes`.
