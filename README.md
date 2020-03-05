@@ -5,7 +5,7 @@
 ![Max Group Size: 3](https://img.shields.io/badge/Max%20Group%20Size-3-important)
 
 > ```java
-> String notSecret = "SGFwcHkgQmlydGhkYXksIERyLiBCYXJuZXMh";
+> String notSecret = "U3ByaW5nIEJyZWFrIQ==";
 > String decoded = new String(java.util.Base64.getDecoder().decode(notSecret));
 > System.out.println(decoded);
 > ```
