@@ -70,9 +70,9 @@ command depends on your present working directory), then please note that contex
    ```
    Implement the `printlnMappedMatches` method in `MoreLambdaFun.java`. You do not need to use a lambda for this step.
    You will only need to use the 
-   [`Function<T, R>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) 
+   [`Function<T, R>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html) 
    and 
-   [`Predicate<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html)
+   [`Predicate<T>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html)
    references to call the appropriate methods.
    
 1. At the end of the `main` method of `MoreLambdaFun` class:
@@ -120,7 +120,7 @@ command depends on your present working directory), then please note that contex
    
    1. In order to call this method, we need a reference to an object of a class that implements 
      `IntFunction<T[]>`. The interface is defined as 
-     [`IntFunction<R>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html). 
+     [`IntFunction<R>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html). 
      Here, we replace `R` with `T[]`. Keep this in mind when inspecting the API documentation 
      for `IntFunction<R>`.
      
