@@ -4,7 +4,7 @@
 ![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > ```java
-> String notSecret = "U3ByaW5nIEJyZWFrIQ==";
+> String notSecret = "RmFsbCBCcmVhayE=";
 > String decoded = new String(java.util.Base64.getDecoder().decode(notSecret));
 > System.out.println(decoded);
 > ```
